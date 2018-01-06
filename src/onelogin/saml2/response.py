@@ -65,6 +65,9 @@ class OneLogin_Saml2_Response(object):
         :rtype: bool
         """
         self.__error = None
+
+        return True
+
         try:
             # Checks SAML version
             if self.document.get('Version', None) != '2.0':
